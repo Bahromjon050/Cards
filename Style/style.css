@@ -1,0 +1,596 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    margin: auto;
+    display: block;
+    max-width: 1440px;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+.maxWidth {
+    padding: 0 140px;
+}
+
+/* Carusel */
+.cardsHeader {
+    padding: 0 100px;
+    margin-top: 50px;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slideBtn {
+    background: none;
+}
+
+.slideBtn {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    background: none;
+    flex-direction: column;
+    border: 2px solid #5fbf7700;
+}
+
+.slideBtn img {
+    width: 90px;
+    height: 90px;
+}
+
+.slider.activ {
+    border-radius: 18px;
+    border: 2px solid #5fbf77 !important;
+}
+
+.swiper {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Length {
+    margin-left: 40px;
+    margin-top: 70px;
+}
+
+.cardsBody {
+    gap: 30px;
+    display: grid;
+    margin-top: 40px;
+    justify-content: center;
+    grid-template-columns: repeat(4, auto);
+}
+
+.card {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    border-radius: 19px;
+    transition: all .4s ease;
+    border: 1px solid rgba(0, 0, 0, 0.131);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.131);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.cardHeader {
+    width: 270px;
+    height: 190px;
+    border-radius: 19px 19px 0 0;
+    /* background: red; */
+}
+
+.cardHeader img {
+    width: 100%;
+    height: 100%;
+}
+
+.card>h5 {
+    padding: 10px 10px 0 10px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 0;
+    color: #39414b;
+    margin: 20px 0 20px 0;
+}
+
+.card>h3 {
+    padding: 10px 10px 0 10px;
+    font-weight: 800;
+    font-size: 22px;
+    line-height: 24px;
+    letter-spacing: 0;
+    color: #39414b;
+    -webkit-flex: 1 1 0;
+    -ms-flex: 1 1 0px;
+    flex: 1 1 0;
+    margin: 0 0 29px 0;
+}
+
+.cardFooter {
+    padding: 10px;
+}
+
+.mashhur {
+    top: 20px;
+    right: 0;
+    width: 130px;
+    position: absolute;
+    text-align: center;
+    padding: 9px;
+    border-radius: 4px;
+    background: rgb(255, 181, 77);
+}
+
+.mashhurText {
+    margin-top: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mashhur h4 {
+    color: #fff;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 12px;
+}
+
+.mashhur h5 {
+    color: #fff;
+}
+
+
+
+
+
+
+
+.Contact1 {
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    z-index: -50;
+    height: 100%;
+    overflow-y: auto;
+    position: fixed;
+    transition: all .5s ease-in-out;
+    /* background: rgb(255, 167, 189); */
+}
+
+.Contact1.activ {
+    opacity: 1;
+    z-index: 50;
+}
+
+.CloseCount img {
+    width: 30px;
+    height: 30px;
+}
+
+.cont {
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    padding: 5px 30px;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.contactBody {
+    margin-top: 60px;
+    position: relative;
+}
+
+.contItem {
+    display: flex;
+    align-items: center;
+}
+
+.CloseCount1 {
+    display: none;
+}
+
+.logo {
+    display: none;
+}
+
+.countLink:nth-child(2) {
+    margin-left: 10px;
+}
+
+.countLink {
+    list-style: none;
+}
+
+.countLink {
+    list-style: none;
+    color: #fff;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 18px;
+    letter-spacing: -.1px;
+    transition: all .4s ease;
+    border-radius: 20px;
+    padding: 10px 25px;
+    transition: all .5s ease-in-out;
+}
+
+.countLink:hover {
+    cursor: pointer;
+    transform: translateY(-4px);
+}
+
+.countLink.activ {
+    color: #000;
+    background: #fff;
+}
+
+.btnTab1 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 800;
+    list-style: none;
+    line-height: 18px;
+    padding: 10px 25px;
+    border-radius: 20px;
+    letter-spacing: -.1px;
+    transition: all .4s ease;
+    transition: all .5s ease-in-out;
+}
+
+.btnTab1:hover {
+    cursor: pointer;
+    transform: translateY(-4px);
+}
+
+.btnTab1.activ {
+    color: #000;
+    background: #fff;
+}
+
+.CloseCount {
+    list-style: none;
+    color: #fff;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 18px;
+    letter-spacing: -.1px;
+    transition: all .4s ease;
+    border-radius: 20px;
+    padding: 10px 25px;
+    transition: all .5s ease-in-out;
+}
+
+.CloseCount:hover {
+    cursor: pointer;
+    transform: translateY(-4px);
+}
+
+.CloseCount.activ {
+    color: #000;
+    background: #fff;
+}
+
+.TabcontactMini {
+    gap: 70px;
+    display: grid;
+    align-items: center;
+    justify-content: space-between;
+    grid-template-columns: repeat(2, auto);
+}
+
+#tabmini {
+    display: block;
+}
+
+.center {
+    text-align: center;
+}
+
+.Tabcontact1 {
+    top: 0;
+    left: 0;
+    gap: 70px;
+    opacity: 0;
+    z-index: -99;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    margin-top: 130px;
+    position: absolute;
+    padding: 0 200px;
+    align-items: center;
+    justify-content: space-between;
+    transition: all .5s ease-in-out;
+    grid-template-columns: repeat(2, auto)
+}
+
+.Tabcontact1.activ {
+    z-index: 99;
+    opacity: 1;
+}
+
+.tab1.activ {
+    z-index: 99;
+    opacity: 1;
+}
+
+.Anim1.activ {
+    animation: tabtext 1s ease;
+}
+
+.Anim2.activ {
+    animation: TabImage 1s ease;
+}
+
+.AnimRight.activ {
+    animation: TabImage 1s ease;
+}
+
+.AnimBottom.activ {
+    animation: tabtext 1s ease;
+}
+
+.AnimScale.activ {
+    animation: schale 1s ease;
+}
+
+@keyframes tabtext {
+    0% {
+        transform: translateY(100px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes TabImage {
+    0% {
+        transform: translateX(252px) rotate(65deg);
+    }
+
+    100% {
+        transform: translateX(0) rotateY(0);
+    }
+}
+
+@keyframes schale {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.TabTexth1 {
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 60px;
+    letter-spacing: 0;
+    color: #FFF;
+}
+
+.TabTextp {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 42px;
+    letter-spacing: 0;
+    color: #FFF;
+    margin: 36px 0 60px;
+}
+
+.TabBodyBtn {
+    padding: 10px 30px;
+    font-size: 24px;
+    font-weight: 900;
+    border-radius: 10px;
+    border: 2px solid rgb(43, 107, 107);
+}
+
+/* #coruselbtn{
+    gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(7,auto);
+} */
+@media (max-width:1115px) {
+    .Tabcontact1 {
+        padding: 0 100px;
+    }
+}
+
+@media (max-width:1100px) {
+    .cardsBody {
+        grid-template-columns: repeat(3, auto);
+    }
+
+    .maxWidth {
+        padding: 0 90px;
+    }
+}
+
+@media (max-width:1000px) {
+    .cont {
+        position: relative;
+        display: flex;
+        padding: 11px 30px;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .CloseCount1 {
+        display: block;
+    }
+
+    .CloseCount1 img {
+        width: 27px;
+        height: 27px;
+    }
+
+    .logo {
+        display: block;
+    }
+
+    /* .logo img{
+        width: 27px;
+        height: 27px;
+    } */
+    .CloseCount {
+        display: none;
+    }
+
+    .contItem {
+        top: 70px;
+        left: -100%;
+        gap: 30px;
+        opacity: 0;
+        width: 100%;
+        z-index: 999;
+        padding: 50px 0;
+        position: absolute;
+        flex-direction: column;
+        background: rgb(0 0 0 / 58%);
+        transition: all .3s ease-in-out;
+    }
+
+    .contItem.activ {
+        left: 0;
+        opacity: 1;
+    }
+}
+
+@media (max-width:950px) {
+    .Tabcontact1 {
+        margin-top: 0;
+    }
+}
+
+@media (max-width:900px) {
+    .center {
+        margin-top: 30px;
+    }
+
+    .cardsBody {
+        grid-template-columns: repeat(2, auto);
+    }
+
+    .Tabcontact1 {
+        padding: 70px;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        grid-template-columns: repeat(1, auto);
+    }
+
+    .TabcontactMini {
+        gap: 0;
+        align-items: center;
+        justify-content: center;
+        grid-template-columns: repeat(1, auto);
+    }
+
+    .TabTextp {
+        margin: 36px 0 30px;
+    }
+}
+
+@media (max-width:680px) {
+    .TabTexth1 {
+        font-weight: 800;
+        font-size: 45px;
+        line-height: 30px;
+    }
+
+    .TabTextp>br {
+        display: none;
+    }
+
+    .TabTextp {
+        font-size: 24px;
+        line-height: 40px;
+    }
+
+    .maxWidth {
+        padding: 0 40px;
+    }
+
+    .TabImage img {
+        width: 100%;
+    }
+}
+
+@media (max-width:530px) {
+    .maxWidth {
+        padding: 0 40px;
+    }
+
+    .cardsBody {
+        grid-template-columns: repeat(1, auto);
+    }
+}
+
+@media (max-width:450px) {
+    .TabTexth1 {
+        font-weight: 800;
+        font-size: 41px;
+        line-height: 45px;
+    }
+
+    .TabTextp {
+        margin: 15px 0 20px;
+    }
+
+    .slider {
+        margin: 0 30px !important;
+    }
+}
